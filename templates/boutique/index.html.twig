@@ -1,0 +1,130 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BoutiqueController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<br>
+<br>
+<center><h1>Boutique HOTELHOUSE</h1>
+<br>
+<h3>La boutique de cadeaux propose une gamme exclusive de produits HOTELHOUSE Carlton</h3> 
+<h3> des bijoux, parfums et plus encore... Vous trouverez le cadeau parfait </h3> 
+<h3>Retrouvez notre magasin dans le hall.</h3></center>
+
+ <center><img id="logo" src="https://tecnohotelnews.com/wp-content/uploads/2019/06/tiendas-hoteles-ritz-carlton.jpg" width="1000" height="600";></center></div>
+ <br>
+ <br>
+ <div class"container-fluid">
+<div class="row p-5 bg-dark text-light">
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h3">HOTELHOUSE</p>
+<img id="logo" src="https://live.staticflickr.com/65535/52440429847_f4d9a01755_t.jpg" >
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">links </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">Informations légales.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_cgv')}}">Conditions Générales de Vente.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_terms')}}">Terms</a>
+</div>
+
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Top destinations </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Destinations.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Accès</a>
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_chambres')}}">Chambres</a>
+</div>
+
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Prestations de service </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">S’inscrire à la newsletter</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Boutique</a>
+
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Actualités.</a>
+</div>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+      <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nous prenons soin de nos clients.</h5>
+        <p class="card-text text-dark">Tout ce que vous besoin.</p>
+        <a href="{{path('app_qsn')}}" class="btn btn-dark ">Qui sommes-nous?</a>
+        <a href="{{path('app_contact')}}" class="btn btn-dark ">Contact us</a>
+        
+        
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nos réseaux sociaux.</h5>
+        <p class="card-text text-dark">Racontez-nous votre expérience.</p>
+        
+        <div class="container_footer">
+        
+     <a href="https://www.flickr.com/photos/metales_per4mance_o/" class="btn btn-dark ">Flickr</a>
+         <a href="https://www.facebook.com/ux.hax/" class="btn btn-dark ">Facebook</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+      <center><p class="pull-right btn btn-dark"><a href="#">Back to top</a></p><p>&copy; 2022 Silvia Garcia Esteve. </p></center>
+      </footer>
+    </div>
+</div>
+</div>
+</div>
+   
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
+
+{% endblock %}

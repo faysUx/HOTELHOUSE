@@ -1,0 +1,151 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello QsnController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<hr></hr>
+<center><h2>Qui sommes-nous?</h2></center>
+
+<br>
+<div>
+ <center> <img src="https://live.staticflickr.com/65535/52440429847_f4d9a01755_m.jpg"></center>
+ <hr>
+
+<center><p>Avec plus de 80 hôtels incroyables dans 30 pays, la chaîne d'hôtels HOTELHOUSE établit les </p>
+<p>normes les plus élevées en matière d'élégance pour les voyageurs d'affaires et de loisirs, </p>
+<p>perfectionnant l'art de l'hospitalité et développant une approche inégalée du luxe.</p>
+<hr></hr>
+
+<center> <img src="https://www.mexicodestinos.com/blog/wp-content/uploads/2011/10/Recepcion-del-hotel.jpg"width="500"height="300"></center>
+<br>
+<br>
+<center><p>L'histoire de l'entreprise The HOTELHOUSE, prend naissance avec The HOTELHOUSE Boston en 1927.</p> 
+Cet établissement emblématique était, et est toujours, le fleuron de l'entreprise, fondée par le célèbre hôtelier Cesar HOTELHOUSE, "roi des hôteliers et hôtelier des rois".</p>
+<p> ". Les normes de service, de restauration et d'équipement de ce monument de Boston servent de référence pour tous les hôtels HOTELHOUSE du monde entier.</p>
+<p> Sa philosophie de service et d'innovation remodèle l'expérience hôtelière de luxe en Europe à travers sa gestion du HOTELHOUSE à Paris et du Carlton à Londres.</p>
+<p> De nombreuses histoires ont donné lieu à des données relatives aux hôtels HOTELHOUSE, de la symbologie de son logo aux minuscules détails sur les couverts et la verrerie.</p>
+<p> Les hôtels HOTELHOUSE ont été des lieux importants de la littérature et du cinéma dans les grandes œuvres du XXe siècle, et le témoin privilégié des hauts sommets de l'État,</p>
+<p> des réunions de grande importance politique et des mariages les plus renommés du siècle dernier. Avec plus de 80 hôtels incroyables dans 30 pays,</p>
+<p> la chaîne d'hôtels HOTELHOUSE établit les normes les plus élevées en matière d'élégance pour les voyageurs d'affaires et de loisirs, perfectionnant l'art de l'hospitalité </p>
+<p>et développant une approche inégalée du luxe.</p></centre>
+<center> <img src="https://i.pinimg.com/originals/01/67/24/016724400510c1511d0be24b0e723cbf.jpg"></center>
+<br><br>
+
+<hr>
+<hr>
+
+<div class"container-fluid">
+<div class="row p-5 bg-dark text-light">
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h3">HOTELHOUSE</p>
+<img id="logo" src="https://live.staticflickr.com/65535/52440429847_f4d9a01755_t.jpg" >
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">links </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">Informations légales.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_cgv')}}">Conditions Générales de Vente.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_terms')}}">Terms</a>
+</div>
+
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Top destinations </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Destinations.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Accès</a>
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_chambres')}}">Chambres</a>
+</div>
+
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Prestations de service </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">S’inscrire à la newsletter</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Boutique</a>
+
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Actualités.</a>
+</div>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+      <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nous prenons soin de nos clients.</h5>
+        <p class="card-text text-dark">Tout ce que vous besoin.</p>
+        <a href="{{path('app_qsn')}}" class="btn btn-dark ">Qui sommes-nous?</a>
+        <a href="{{path('app_contact')}}" class="btn btn-dark ">Contact us</a>
+        
+        
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nos réseaux sociaux.</h5>
+        <p class="card-text text-dark">Racontez-nous votre expérience.</p>
+        
+        <div class="container_footer">
+        
+     <a href="https://www.flickr.com/photos/metales_per4mance_o/" class="btn btn-dark ">Flickr</a>
+         <a href="https://www.facebook.com/ux.hax/" class="btn btn-dark ">Facebook</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+      <center><p class="pull-right btn btn-dark"><a href="#">Back to top</a></p><p>&copy; 2022 Silvia Garcia Esteve. </p></center>
+      </footer>
+    </div>
+</div>
+</div>
+</div>
+   
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+    <h1>Register</h1>
+
+    {{ form_start(registrationForm) }}
+
+    <form>
+    <div class="mb-3">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Pseudo</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Pseudo">
+  </div>
+  <br>
+  <div class="mb-3">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Nom</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom">
+  </div>
+   <br>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Prenom</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Prenom">
+  </div>
+   <br>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <br>
+  <form>
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Civilite</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        
+        <option selected>civilite</option>
+        <option value="1">Homme</option>
+        <option value="2">Femme</option>
+        <option value="3">Autres</option>
+      </select>
+    </div>
+       
+
+ <br>
+<div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+
+ <br>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <br>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Agree terms</label>
+<br>
+<br>
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Select file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+<br>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+</form>
+     
+     <hr>
+<hr>
+
+<div class"container-fluid">
+<div class="row p-5 bg-dark text-light">
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h3">HOTELHOUSE</p>
+<img id="logo" src="https://live.staticflickr.com/65535/52440429847_f4d9a01755_t.jpg" >
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">links </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">Informations légales.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_cgv')}}">Conditions Générales de Vente.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_terms')}}">Terms</a>
+</div>
+
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Top destinations </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Destinations.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Accès</a>
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_chambres')}}">Chambres</a>
+</div>
+
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Prestations de service </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">S’inscrire à la newsletter</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Boutique</a>
+
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Actualités.</a>
+</div>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+      <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nous prenons soin de nos clients.</h5>
+        <p class="card-text text-dark">Tout ce que vous besoin.</p>
+        <a href="{{path('app_qsn')}}" class="btn btn-dark ">Qui sommes-nous?</a>
+        <a href="{{path('app_contact')}}" class="btn btn-dark ">Contact us</a>
+        
+        
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nos réseaux sociaux.</h5>
+        <p class="card-text text-dark">Racontez-nous votre expérience.</p>
+        
+        <div class="container_footer">
+        
+     <a href="https://www.flickr.com/photos/metales_per4mance_o/" class="btn btn-dark ">Flickr</a>
+         <a href="https://www.facebook.com/ux.hax/" class="btn btn-dark ">Facebook</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+      <center><p class="pull-right btn btn-dark"><a href="#">Back to top</a></p><p>&copy; 2022 Silvia Garcia Esteve. </p></center>
+      </footer>
+    </div>
+</div>
+</div>
+</div>
+   
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
+
+{% endblock %}

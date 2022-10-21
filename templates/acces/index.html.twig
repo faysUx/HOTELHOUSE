@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccesController!{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<br>
+<br>
+<div>
+<center><h1>HOTELHOUSE Adresse</h1></center>
+<center><h3>1 avenue Montaigne, 75008 Paris</h3></center>
+<br>
+ 
+  <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6401922523005!2d2.299884351017265!3d48.865071179186515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Av.%20Montaigne%2C%2075008%20Paris!5e0!3m2!1ses!2sfr!4v1666340526537!5m2!1ses!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+  
+  <div class="card-body" >
+    <center><h5 class="card-title">Trouvez-nous facilement</h5></center>
+   <center> <p class="card-text">À bientôt!!</p></center>
+   <br>
+  
+  </div>
+  </div>
+  <br>
+  <br>
+
+  <div class"container-fluid">
+<div class="row p-5 bg-dark text-light">
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h3">HOTELHOUSE</p>
+<img id="logo" src="https://live.staticflickr.com/65535/52440429847_f4d9a01755_t.jpg" >
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">links </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">Informations légales.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_cgv')}}">Conditions Générales de Vente.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_terms')}}">Terms</a>
+</div>
+
+</div>
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Top destinations </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Destinations.</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_acces')}}">Accès</a>
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_chambres')}}">Chambres</a>
+</div>
+
+
+<div class="col-xs-12 col-md-6 col-lg-3">
+<p class="h5">Prestations de service </p>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_legal')}}">S’inscrire à la newsletter</a>
+</div>
+<div class="mb-2">
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Boutique</a>
+
+</div>
+<a class="text-secondary text-decoration-none" href="{{path('app_boutique')}}">Actualités.</a>
+</div>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+      <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nous prenons soin de nos clients.</h5>
+        <p class="card-text text-dark">Tout ce que vous besoin.</p>
+        <a href="{{path('app_qsn')}}" class="btn btn-dark ">Qui sommes-nous?</a>
+        <a href="{{path('app_contact')}}" class="btn btn-dark ">Contact us</a>
+        
+        
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Nos réseaux sociaux.</h5>
+        <p class="card-text text-dark">Racontez-nous votre expérience.</p>
+        
+        <div class="container_footer">
+        
+     <a href="https://www.flickr.com/photos/metales_per4mance_o/" class="btn btn-dark ">Flickr</a>
+         <a href="https://www.facebook.com/ux.hax/" class="btn btn-dark ">Facebook</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+      <center><p class="pull-right btn btn-dark"><a href="#">Back to top</a></p><p>&copy; 2022 Silvia Garcia Esteve. </p></center>
+      </footer>
+    </div>
+</div>
+</div>
+</div>
+   
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
+{% endblock %}
